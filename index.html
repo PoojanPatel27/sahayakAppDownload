@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Our App</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            width: 60%;
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto 25px auto; /* perfectly centered */
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 480px) {
+            .container {
+                padding: 25px 15px;
+            }
+
+            .logo {
+                width: 70%;
+                max-width: 160px;
+            }
+
+            .download-btn {
+                font-size: 18px;
+                padding: 12px 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="sahayak_logo.png" alt="App Logo" class="logo">
+        <a href="app-debug.apk" download class="download-btn">Download App</a>
+    </div>
+
+</body>
+</html>
